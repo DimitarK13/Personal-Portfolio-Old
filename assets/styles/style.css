@@ -238,6 +238,53 @@ section {
   flex: 1 1 100%;
 }
 
+.projects {
+  position: relative;
+  isolation: isolate;
+}
+
+.projects::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(../images/code-snippets/code-snippet-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.projects .box {
+  border-radius: 0.75rem;
+  margin-block: 5rem;
+  box-shadow: 0 0 1rem rgb(0 0 0 / 0.5);
+}
+
+.landing-pages {
+  cursor: pointer;
+  width: 800px;
+  margin-left: auto;
+}
+
+.games {
+  cursor: pointer;
+  width: 800px;
+}
+
+.full-website {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+}
+
+@media (min-width: 600px) {
+  .projects .box {
+    margin-block: 10rem;
+  }
+  .full-website {
+    aspect-ratio: 16 / 9;
+  }
+}
+
 .timeline-flex {
   display: flex;
   gap: 2rem;
