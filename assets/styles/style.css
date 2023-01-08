@@ -255,30 +255,47 @@ section {
   flex: 1 1 100%;
 }
 
-.projects .box {
+.projects .project {
   border-radius: 0.75rem;
-  margin-block: 5rem;
   box-shadow: 0 0 1rem rgb(0 0 0 / 0.5);
 }
 
-.landing-pages {
-  cursor: pointer;
+.landing-pages-container,
+.games-container {
+  position: relative;
   width: 800px;
+  aspect-ratio: 16 / 9;
+  margin-block: 5rem;
+}
+
+.landing-pages-container {
   margin-left: auto;
 }
 
-.games {
+.carousel-item {
   cursor: pointer;
-  width: 800px;
+  transform: scale(0);
+  position: absolute;
+  transition: transform 350ms ease-in-out;
+  transform-origin: top right;
+}
+
+.carousel-item[data-target='active'] {
+  transform: scale(1);
+  transform-origin: bottom left;
 }
 
 .full-website {
+  display: block;
   width: 100%;
+  max-width: 1400px;
   aspect-ratio: 9 / 16;
+  margin-inline: auto;
 }
 
 @media (min-width: 600px) {
-  .projects .box {
+  .landing-pages-container,
+  .games-container {
     margin-block: 10rem;
   }
   .full-website {

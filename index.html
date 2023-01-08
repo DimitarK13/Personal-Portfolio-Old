@@ -82,16 +82,59 @@
       </section>
       <section class="projects" aria-label="Projects">
         <p>Click on Projects to change</p>
-        <img
-          src="assets/images/landing-pages/landing-page-1.png"
-          alt=""
-          class="landing-pages box"
-        />
-        <img src="assets/images/games/game-1.png" alt="" class="games box" />
+
+        <div class="landing-pages-container">
+          <img
+            src="assets/images/landing-pages/landing-page-1.png"
+            alt=""
+            class="landing-page-item project carousel-item"
+            data-target="active"
+          />
+          <img
+            src="assets/images/landing-pages/landing-page-2.png"
+            alt=""
+            class="landing-page-item project carousel-item"
+          />
+          <img
+            src="assets/images/landing-pages/landing-page-3.png"
+            alt=""
+            class="landing-page-item project carousel-item"
+          />
+          <img
+            src="assets/images/landing-pages/landing-page-4.png"
+            alt=""
+            class="landing-page-item project carousel-item"
+          />
+        </div>
+
+        <div class="games-container">
+          <img
+            src="assets/images/games/game-1.png"
+            alt=""
+            class="games-item project carousel-item"
+            data-target="active"
+          />
+          <img
+            src="assets/images/games/game-2.png"
+            alt=""
+            class="games-item project carousel-item"
+          />
+          <img
+            src="assets/images/games/game-3.png"
+            alt=""
+            class="games-item project carousel-item"
+          />
+          <img
+            src="assets/images/games/game-4.png"
+            alt=""
+            class="games-item project carousel-item"
+          />
+        </div>
+
         <iframe
           src="https://straxdesigns.com/"
           frameborder="0"
-          class="full-website box"
+          class="full-website project"
         ></iframe>
       </section>
       <section class="career-timeline">
@@ -160,5 +203,7 @@
         </div>
       </section>
     </div>
+
+    <script src="assets/scripts/carousel.js"></script>
   </body>
 </html>
