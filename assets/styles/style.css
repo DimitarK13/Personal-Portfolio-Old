@@ -117,20 +117,6 @@ section {
   isolation: isolate;
 }
 
-.container::after {
-  content: '<!DOCTYPE html>\a<html lang="en">\a  <head>\a    <meta charset="UTF-8" />\a    <meta http-equiv="X-UA-Compatible" content="IE=edge" />\a    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\a    <title>Front-end Web Developer • DK</title>\a    <link rel="preconnect" href="https://fonts.googleapis.com" />\a    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\a    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />\a    <link rel="stylesheet" href="assets/styles/style.css" />\a  </head>\a  <body>\a    <div class="container">\a      <div class="social-links">\a        <a href="https://github.com/DimitarK13" target="_blank">\a          <img src="assets/images/icon-github.svg" alt="Github Logo in light blue (primary) color" />\a        </a>\a      </div>\a      <div class="hero">\a        <p>Front-End Web Developer</p>\a        <h1 class="large-heading">\a          <span class="glitch-100">Bringing</span> your idea to the\a          <span class="glitch-200">web</span>\a        </h1>\a      </div>\a      <section class="flex-reverse">\a        <div class="about-me flex-vertical">\a          <p class="max-ch-50">\a          </p>\a          <p class="max-ch-50">\a          </p>\a        </div>\a        <div class="skills">\a          <ul class="flex-vertical">\a            <li class="large-heading"><span class="glitch-200">HTML</span></li>\a            <li class="large-heading">CSS</li>\a            <li class="large-heading">\a              <span>JavaScript</span>\a            </li>\a            <li class="large-heading">\a              <span class="glitch-100">React</span>\a            </li>\a            <li class="large-heading">Figma</li>\a          </ul>\a        </div>\a      </section>\a      <section class="projects" aria-label="Projects">\a        <p>Click on Projects to change</p>\a        <img src="assets/images/games/game-1.png" alt="" class="games box" />\a        <iframe\a          src="https://straxdesigns.com/"\a        ></iframe>\a      </section>\a      <section class="career-timeline">\a        <header>\a          <h2 class="large-heading" style="text-align: center">\a            <span>Career Timeline</span>\a          </h2>\a        </header>\a';
-  white-space: pre;
-  position: absolute;
-  inset: 0 var(--margin-inline);
-  z-index: -1;
-  opacity: 0.1;
-  color: #faeb46;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 1rem;
-
-  overflow: hidden;
-}
-
 .flex-vertical {
   display: flex;
   flex-direction: column;
@@ -263,7 +249,8 @@ section {
 .landing-pages-container,
 .games-container {
   position: relative;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   aspect-ratio: 16 / 9;
   margin-block: 5rem;
 }

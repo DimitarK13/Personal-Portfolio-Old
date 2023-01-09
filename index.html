@@ -14,9 +14,10 @@
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/locomotive-scroll.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container" data-scroll-container>
       <div class="social-links">
         <a href="https://github.com/DimitarK13" target="_blank">
           <img
@@ -125,12 +126,6 @@
             class="games-item project carousel-item"
           />
         </div>
-
-        <iframe
-          src="https://straxdesigns.com/"
-          frameborder="0"
-          class="full-website project"
-        ></iframe>
       </section>
       <section class="career-timeline">
         <header>
@@ -200,5 +195,14 @@
     </div>
 
     <script src="assets/scripts/carousel.js"></script>
+    <script src="locomotive-scroll.min.js"></script>
+    <script>
+      (function () {
+        var scroll = new LocomotiveScroll({
+          el: document.querySelector('[data-scroll-container]'),
+          smooth: true,
+        });
+      })();
+    </script>
   </body>
 </html>
