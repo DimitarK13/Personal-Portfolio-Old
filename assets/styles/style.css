@@ -272,6 +272,19 @@ section {
   margin-left: auto;
 }
 
+.landing-pages-container::before {
+  content: 'Landing Pages';
+  position: absolute;
+  top: -3rem;
+  right: 0;
+}
+
+.games-container::before {
+  content: 'Games';
+  position: absolute;
+  top: -3rem;
+}
+
 .carousel-item {
   cursor: pointer;
   transform: scale(0);
