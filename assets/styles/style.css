@@ -1,5 +1,6 @@
 :root {
   --brand-clr: #60dcfb;
+  /* --brand-clr: #13586a; */
   --neutral-clr-100: #ffffff;
   --neutral-clr-300: #9c9c9c;
   --neutral-clr-600: #3c4444;
@@ -232,46 +233,6 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-
-  position: relative;
-  isolation: isolate;
-}
-
-#board {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-
-  z-index: 1;
-}
-
-.blob {
-  position: absolute;
-  left: calc(var(--x) - var(--margin-inline) * 1.75);
-  top: calc(var(--y) - 2rem);
-  z-index: -1;
-
-  width: 150px;
-  aspect-ratio: 2 / 1;
-
-  background-image: radial-gradient(
-    transparent,
-    hsl(180, 6%, 13%),
-    transparent,
-    hsl(180, 6%, 13%),
-    transparent 50%
-  );
-
-  transform: scale(0);
-  transition: transform 0s 1.5s, opacity 1.5s ease-in-out;
-  opacity: 0;
-}
-
-.blob.active {
-  transform: scale(1);
-  opacity: 1;
-
-  transition: transform 1s ease-in-out, opacity 0s;
 }
 
 .flex-reverse {
